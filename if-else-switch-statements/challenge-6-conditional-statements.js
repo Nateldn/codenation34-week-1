@@ -4,16 +4,24 @@
 const string = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";  // Input string
 const charArray = string.split(''); // Split String into an array
 
-let searchForVowels = ["a","e","i","o","u"]; // create an array for vowels
-
-for (let i = 0; i < searchForVowels.length; i++)
+let vowelArray = ["a","e","i","o","u"]; // create an array for vowels
+let theAnswer;
+let comparison = 0;
+for (let i = 0; i < vowelArray.length; i++)
 { // loop through array and store index of each vowel
-console.log.sort(string.lastIndexOf(searchForVowels[i])); // log the last position of each vowel
+//console.log(string.lastIndexOf(searchForVowels[i])); // log the last position of each vowel
 // Compare the last index of each vowel to find the highest, then log to the console
+
+if (string.lastIndexOf(vowelArray[i]) > comparison) { // check if index of one vowel is greater than 0 
+    comparison = string.lastIndexOf(vowelArray[i]); // find the highest indexed vowel
+     theAnswer = `The last vowel in the string is ${vowelArray[i]}`; // new variable to store the highest index vowel and this sentance
 }
 
+}
 
-.sort(function(a,b){return b-a;})[0]
+console.log(`${theAnswer}`); // log vowel and 
+
+
 
 
 
