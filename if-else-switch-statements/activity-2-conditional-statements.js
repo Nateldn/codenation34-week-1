@@ -41,5 +41,5 @@
         break;
 
         default: 
-            console.log(`I don’t mind having ${toppingSelection[i]} on my pizza.`); // Currently outputs the index of the top
+            console.log(`I don’t mind having ${toppingSelection} on my pizza.`); // Currently outputs the index of the randomly selected item from the toppings array
     } 

@@ -3,9 +3,9 @@ const word = "Gosh, this is working";
 let stringToArray = word.toLocaleLowerCase().split(''); // Convert to lowercase and split String into an array
 console.log(stringToArray);
 
-const isFirstLastChar = () => {
+const isFirstLastChar = () => { // Arrow function to check whether first and last letter are the same
 
-    let firstChar = stringToArray[0];
+    let firstChar = stringToArray[0]; 
     console.log(firstChar);
     let lastChar = stringToArray[stringToArray.length-1];
     console.log(lastChar);

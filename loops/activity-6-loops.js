@@ -7,27 +7,22 @@ for (let i = 1; i <= 20; i++) {
   };
 
 
-// Example of a While Loop - Varibles are declared before the loop (global scope) possiblity of an infinite loop if stopping condition is not set which will drain memory and ultimately crash machines
-
-while (condition) {
-    // code block to be executed
-  }
-
-  let i = 1;
-  while (i <= 20) {
-    console.log(i);
-    i++;
-  }
-
+// Example of a While Loop - Varibles are declared before the loop (global scope)  which means the possiblity of an infinite loop if stopping condition is not set which will drain memory and ultimately crash machines.  A while loop will only run if the condition set is 
+// A while loop that prints 1, to 20
+let counterTwo = 1;
+while (counterTwo <= 20) {
+  console.log(counterTwo);
+  counterTwo++;
+}
 // Example of a Do...While Loop  - This loop will run at least once whether or not the conditon evaluates to true and then continue to do so until the condition is false. 
 
-let countString = '';
-let i = 0;
+let counterString = '';
+let i = 1;
  
 do {
-  countString = countString + i;
+  counterString = counterString + i;
   i++;
-} while (i < 5);
+} while (i <= 20);
  
-console.log(countString);
+console.log(counterString);
 

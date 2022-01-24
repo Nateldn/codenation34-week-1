@@ -74,3 +74,18 @@ console.log(findPrimes(12)); // testing to see function works
 for(let i = 0; i < 20; i++){
     if(findPrimes(i)) console.log(i);
 }
+
+
+
+const Numbers = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+  for (let i = 2; num > i; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+console.log(Numbers.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
