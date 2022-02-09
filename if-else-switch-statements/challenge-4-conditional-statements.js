@@ -10,7 +10,7 @@ let numReverse = num.split("").reverse().join("");
 if (num === numReverse) {
     console.log("Nice, your number is a palindrome!");
 } 
-// If its a palindrome print this message 
+// If it's a palindrome print this message 
 else {
     console.log("Nope your number is not a palindrome.");
 }
